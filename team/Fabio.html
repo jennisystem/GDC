@@ -1,0 +1,183 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
+	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="../scripts.js"></script>
+	<link href="../style.css" rel="stylesheet">
+	<style>
+	.image_holder {
+		display: inline-block;
+		width: 30%;
+		float: left;
+		padding-right: 1em;
+	}
+	.image_holder img{
+		width: 100%;
+	}
+	
+	.body{
+	}
+	.body h2{
+		font-family: Abel;
+		font-size: 48px;
+		line-height: 1em;
+		margin: 0;
+		letter-spacing: -0.02em;
+	}
+	.body h3{
+		font-family: Abel;
+		font-size: 28px;
+		line-height: 1em;
+		margin: 0.5em 0 0 0;
+		letter-spacing: -0.02em;
+		color: #4DAAD2;
+	}
+	
+	.tab{
+		padding: 6px 0 0 0; margin: 0;
+		border: 2px solid #90E0E0;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.tab li{
+		line-height: 1em;
+		margin: 0 0 -2px 0;
+		padding: 0.25em 0.75em;
+		font-family: Abel;
+		font-size: 28px;
+		letter-spacing: -0.02em;
+		display: inline;
+		color: #90E0E0;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+	}
+	.tab li.selected{
+		border: 2px solid #90E0E0;
+		background: #FBFBFB;
+	}
+	
+	.tab-content{
+		border: 2px solid #90E0E0;
+		margin: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: 0.75em;
+		display: none;
+		font-family: "Noto Sans", sans;
+		font-size: 22px;
+	}
+	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content li{
+		font-family: "Noto Sans", sans;
+		font-size: 24px;
+	}
+	
+	.tab-content.selected{
+		display: block;
+	}
+	
+	
+	@media only screen and (orientation: landscape) {
+	
+	}
+	@media only screen and (orientation: portrait) {
+		.image_holder {
+			float: none;
+			width: 50%;
+			display: flex;
+			margin: auto;
+			padding: 0;
+		}
+		.body h2, h3{
+			text-align: center;
+		}
+		.body h3{
+			margin-bottom: 0.5em;
+		}
+	}
+	</style>
+	<script>
+		function selectTab(tab, tabName){
+			for(let elem of document.getElementsByClassName("tab-content")){
+				elem.classList.remove("selected")
+			}
+			for(let elem of document.getElementById(tab).children){
+				elem.classList.remove("selected")
+			}
+			document.getElementById(tabName+'_tab').classList.add("selected");
+			document.getElementById(tabName).classList.add("selected");
+		}
+	</script>
+</head>
+
+<!-- Page body -->
+<body>
+<nav id="main-navbar"></nav>
+<script> makeNavbar(0); </script>
+
+<div id="intro" style="padding: 2em 0 0.5em 0; margin-bottom: 0.5em; background: #425EC9;">
+	<h2 style="text-align: center; color: white;"> Meet Our Team of Innovators </h2>
+</div>
+
+<br id="content"/>
+
+<div class="section">
+	<div class="image_holder">
+		<img src="team/placeholder.png"></img>
+	</div>
+
+	<div class="body">
+		<h2> Fabio Macciardi, M.D., Ph.D.  </h2>
+		<h3> Scientific Advisor </h3>
+	
+		<ul id="tabBar" class="tab">
+			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
+			<li onclick="selectTab('tabBar', 'background');" id="background_tab">Background</li>
+			<li onclick="selectTab('tabBar', 'awards');" id="awards_tab">Awards</li>
+		</ul>
+		
+		<p id="overview" class="tab-content selected">
+			Dr. Fabio Macciardi is presently a Research Professor of Psychiatry at USC’s Keck School of Medicine, and Professor of Molecular Psychiatry at the University of California, Irvine.
+			<br/><br/>
+			Dr. Macciardi is both a certified (EU) clinical psychiatrist and epidemiologist and a well-established psychiatric geneticist with years of experience in large-scale and international collaborations. He has identified PS1 the first gene for early onset Alzheimer's disease (Hyslop et al, 1992) and several genes (DAOA, DAAO, AHI1) for schizophrenia, now definitively confirmed. Most of his work has been on the genetics of complex disorders (other than AD and schizophrenia, He worked on bipolar disorders, autism, depression, autoimmune disorders and ALS) and pharmacogenomics. At present, his lab activities are mostly related to study the function and evolution of genes in complex traits and to next-generation sequencing (NGS) of complex traits. In 2010, his team published the first paper that shows the identification of a gene and its molecular defect in a rare Mendelian disorder using NGS and they are now extending this approach to find the molecular bases of genes involved in schizophrenia, autism and AD. His current major research interests are related to studying the fine mechanisms of gene regulation exerted by the non-coding DNA. All across his research, development of genetic epidemiology methods and algorithms remains a major focus of activity.
+		</p>
+		
+		<div id="background" class="tab-content">
+			Education
+			<ul>
+				<li>University of Milan, School of Medicine, M.D. 1975-1982 </li>
+				<li>University of Catania, School of Medicine, Ph.D. Psychiatric Genetics, 1983-1987 </li>
+				<li>Residency:  University of Pavia, School of Medicine, Epidemiology and Statistics, 1987-1990 </li>
+				<li>Post-Doc: Yale University, School of Medicine, 1990-1991, Human Genetics </li>
+			</ul>
+			<br/>
+			Professional Society Memberships
+			<ul>
+				<li>Member of the Scientific Advisory Board for the "Center for the Study of the genetics of complex behavior and aging" at the S. Herzog memorial Hospital, Jerusalem, Israel </li>
+				<li>Chair, Genomics Working Group, BIRN Consortium </li>
+			</ul>
+		</div>
+		
+		<div id="awards" class="tab-content">
+			Awards
+			<ul>
+				<li>2000, NARSAD Independent Investigator Award</li>
+				<li>1985, Italian Ministry of Education Scholarship, Human Genetics</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" style="clear: both;">
+	<div class="filler"></div>
+	<script> makeFooter(0); </script>
+</footer>
+
+</body>
+</html>

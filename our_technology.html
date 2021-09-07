@@ -1,0 +1,265 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
+	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="scripts.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<style>
+	/* Title*/
+	#title img{ width: 100%; object-fit: cover; }
+	
+	/* Section Graphics */
+	.section-graphics {
+		margin-top: 60px;
+		position: relative;
+		float: left;
+		width: 41%;
+		padding-bottom: 45px;
+	}
+	.section-graphics.right { float: right; }
+	.section-graphics img{
+		position: relative;
+		top: 0;		left: 10%;
+		width: 75%;
+	}
+	
+	.section-body.right { margin-left: 45%; }
+	.section-body.left { margin-right: 45%; }
+	
+	.card {
+		box-shadow: -5px 10px 100px 5px rgba(144, 224, 224, 0.26);
+		border-radius: 0.5em;
+		padding: 0.5em 1em 1em 1.5em;
+	}
+	
+	#embp .section-graphics { width: 45%; padding: 0 0 60px 0; transform: translate(-10%, 0);}
+	#pic1 img{
+		transform: translate(0, 1em);
+		width: 100%; box-shadow: 10px 10px 80px 0px #ACC9BB80;
+	}
+	#embp .section-body { margin-right: 48%;}
+	#in-page-nav .body {width: 45%; float:right;}
+	#in-page-nav * { color: #1F789D; font: 24px Abel, sans-serif; }
+	#in-page-nav ol { margin: 0; }
+	#in-page-nav h3 { 
+		margin: 0 0 -1em -0.5em; 
+		padding: 0.5em 0 1em 0.5em;
+		border-left: 2px solid #FB6678;
+	}
+	#in-page-nav a:link{ text-decoration: none; }
+	#in-page-nav a:visited{ text-decoration: none; }
+	#in-page-nav a:hover{
+		font-weight: 600;
+	}
+	#viral_graphic, #stem_graphic1, #stem_graphic2 {
+		 float: right;
+		 width: 30%;
+		 margin-left: 0.5em;
+	}
+	#science .card{margin-left: 10%;}
+	#more-graphics{
+		width: 40%;
+		margin: auto;
+		margin-top: 0.5em;
+	}
+	#stem_graphic1 {float: left; margin-left:0; margin-right: 0.5em;}
+	#stem_graphic1, #stem_graphic2{ height: 6em; width: auto; margin-top: 0.5em;}
+	@media only screen and (orientation: portrait) {
+		.section-graphics { width: 80%;}
+		.section-graphics.left {margin-left: 9%; 	margin-right: 9%;}
+		.section-graphics.right {margin-left: 9%; 	margin-right: 9%;}
+		.section-body { padding-top: 60px; 	clear: both; }
+		.section-body.right{ margin-left: 0; }
+		.section-body.left{ margin-right: 0; }
+		
+		#embp .section-graphics { width: 100%;  padding-bottom: 0;}
+		#pic1 img{ width: 100%; margin-left: 10%;}
+		#pic2 img{ display: none }
+		#pic3 img{ display: none }
+		#embp .section-body { margin-right: 0;}
+		.toc { float: none; }
+		#in-page-nav .body {width: 100%; float: none; margin-bottom: 30px;}
+		
+		#viral_graphic, #stem_graphic1, #stem_graphic2 {
+			 float: none;
+			 width: 80%;
+			 height: auto;
+			 margin-left: 10%;
+			 margin-bottom: 0.5em;
+		}
+		#science .card{margin-left: 0;}
+		#more-graphics{
+			width: 80%;
+		}
+	}
+	
+	</style>
+</head>
+
+<!-- Page body -->
+<body>
+<nav id="main-navbar"></nav>
+<script> makeNavbar(1); </script>
+
+<div id="title">
+	<div id="titleGraphics">
+		<img src="res/tech_main.png"></img>
+	</div>
+	
+	<div id="titleTextContainer">
+	<h1 id="titleTitle"> TECHNOLOGY </h1>
+	</div>
+</div>
+
+
+<div id="in-page-nav" class="section" style="padding-top: 60px; overflow: auto;">
+	<div class="body"> 
+		<p style="margin-bottom: 0px; margin-top: 0px;"> Our approach innovatively targets treatment 
+		based on powerful third party research that has been published in the most prestigious 
+		scientific journals. Below you will find the peer-reviewed and published research that builds 
+		the foundation of our approach to treatment of the brain.</p> 
+	</div>
+	
+	<div class="toc">
+		<h3 style="line-height: 1;"> GO TO: </h3>
+		<ol>
+			<li><a href="#embp"> EMBP</a></li>
+			<li><a href="#viral"> Magnetic Stimulation for Viral Infection</a></li>
+			<li><a href="#stem1">Maggnetic Stimulation and STEM Cells</a></li>
+		</ol>
+	</div>
+</div>
+
+<div id="embp" class="section" style="overflow: auto;">
+  <div class="card">
+	<div class="sec-header" style="position: relative; display: inline-block;">
+		<span>
+			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid #4DAAD2; border-left: 1px solid #4DAAD2;" ></p>
+			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 01</h2>
+		</span>
+		<h2> Electromagnetic Brain Pulse (EMBP)  </h2>
+	</div>
+	
+	<p style="margin-bottom: 0px; margin-top: 12px;"> We analyze neural information and utilize our Electromagnetic Brain Pulsing (EMBP&trade;) neural modulation therapy to optimize brain health and restore functionality. EMBP&trade; is a personalized, non-pharmaceutical, and non-invasive treatment that alters nerve activity through the targeted delivery of stimulus to specific neurological sites in the body in order to help restore and optimize brain functionality. </p>
+	
+	<p style="margin-top: 18px;  margin-bottom: 18px"> Developed based on the fundamental physical law of conservation and the resonant nature of the nervous system, EMBP™ has been implemented to treat many neuropsychiatric disorders such as major depressive disorder, anxiety disorder, ADHD, and SUD to name a few. Our combined expertise in neuroscience, innovative machine learning analysis, and cutting-edge use of EMBP&trade; neuro-stimulation has actualized in our patented, personalized, and non-invasive neuromodulation treatment.  </p>
+
+	<div style="display: flex; justify-content: center;">
+		<a class="button"  href="about_us.html"> LEARN MORE </a>
+	</div>
+  </div>
+</div>
+
+<div id="viral" class="section" style="overflow: auto;">
+  <div class="card" style="background: url('res/tech_stem_background.png')">
+	<div class="sec-header" style="position: relative; display: inline-block;">
+		<span>
+			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid white; border-left: 1px solid white;" ></p>
+			<h2 style="color: white; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 02</h2>
+		</span>
+		<h2 style="color: white;"> Magnetic Stimulation for Viral Infection  </h2>
+	</div>
+	
+	<div>
+	<img id="viral_graphic" src="res/tech_viral.png">
+	<div style="overflow: auto;">
+	<p style="margin-bottom: 0px; margin-top: 12px; color: white;"> Our technology for treating viral infections administers magnetic pulses cutaneously through a specially designed ergonomic coil to targeted nerve ganglia in order to deactivate the viral growth and proliferation. </p>
+	<p style="margin-top: 18px;  margin-bottom: 18px; color:white;"> In our preliminary study, we have discovered that repetitive magnetic pulse stimulation significantly prolongs the incubation period of herpes viruses in infected animals. We have tested 14 human patients with acute shingles and 4 patients with trigeminal neuralgia. All patients responded positively and achieved remission within 4 days. We are currently conducting experiments with cultured herpes virus to identify the one or more mechanisms of the action responsible for the clinical response to repetitive magnetic pulses. Possible mechanisms of action include the stage that the electromagnetic stimulation has worked, a direct affect on the viruses, changing the environment of hosting cells, or a higher level effect involving the immune system. As of today, our technology has been granted patent protection in 5 countries.  </p>
+	</div>
+	</div>
+  </div>
+</div>
+
+<div id="science" class="section" style="overflow: auto;">
+  <div class="card">
+	<h2> The Science Behind It  </h2>
+	<p style="margin-bottom: 0px; margin-top: 12px;"> Using mechanical energy to deal with microorganisms has always been thought of as an alternative treatment for infectious diseases. Raymond Rife in the 1920's invented a variable frequency flashing light and ultrasound source machine which could kill bacteria, protozoa, fungi, and viruses. Rife found that every microorganism he encountered had at least one frequency of ultrasound (i.e. mechanical shaking and resonance) that destroyed the microorganism very easily. By 1939, Rife claimed that he had uncovered lethal ultrasound frequencies for microbes associated with 52 major diseases. </p>	
+	<p style="margin-top: 18px;  margin-bottom: 18px"> Mizuno et al. (1990) have demonstrated that pulse electric fields could inactivate swine vesicular disease virus (SVDV) and equine herpes virus-1 (EHV-1). SVDV in deionized water or in bovine serum could be inactivated effectively in vitro when a pulsed electric field (crest value of 30 kV/cm, exponential-decay waveform) was applied 60 to 120 times or the input electrical energy was 43.6 to 87.2 cal/cm3. After inactivation of the pulse application, the shape of the protein shell of SVDV did not change, but RNA contained in the core of SVDV disappeared, and hollow particles were observed. EHV-1 in minimum essential medium (MEM) could also be inactivated effectively in vitro when the pulse application number exceeded 45, or the input electrical energy was more than 32.7 cal/cm3. Apparent damage to the envelope around EHV-1 and to the core of EHV-1 consisting of DNA was observed. </p>
+	<p style="margin-top: 18px;  margin-bottom: 18px"> In the 1990's, Drs. W. Lyman and S. Kaali, working at Albert Einstein College of Medicine in NYC made an important discovery to help deal with diseases including AIDS, cancer, Gulf War Syndrome and so on. They found that they could inactivate the HIV virus by applying a low voltage direct current (50-100 μA) electrical potential with an extremely small current flow to AIDS infected blood in a test tube. They found that the viral particles were not directly destroyed by the electric current, but rather the outer protein coating of the virus was affected in such a way as to prevent the virus from producing reverse transcriptase, a necessary enzyme needed by the virus to invade human cells. To replicate Lyman and Kaali's finding, Dr. Robert C. Beck found that he could get the same results using the 3.92 Hz square wave by placing the electrodes to the skin directly over those arteries that were close to the skin surface. </p>
+	<p style="margin-top: 18px;  margin-bottom: 18px"> The procedures discussed above are limited in clinical applications due to either their invasive nature of the treatments or the treatments are inadequate to deal with systemic infections. Our patented technology using magnetic stimulation has the advantages of being able to deliver an effective treatment of local infectious diseases in vivo without unwanted side effects associated with invasive procedures and to deliver an effective, non-invasive treatment of systemic infections without the need for extracorporeal treatment of blood.  </p>
+  </div>
+</div>
+
+
+<div id="stem1" class="section" style="overflow: auto;">
+  <div class="card">
+	<div class="sec-header" style="position: relative; display: inline-block;">
+		<span>
+			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid #4DAAD2; border-left: 1px solid #4DAAD2;" ></p>
+			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 03</h2>
+		</span>
+		<h2> Magnetic Stimulation and STEM Cell Technology  </h2>
+	</div>
+	<p style="margin-bottom: 0px; margin-top: 12px;"> Our stem cell technology involves repetitive electromagnetic stimulation at the location where a patient has been intravenously administered or received stem cell transplantation for organ or tissue injury. Our preliminary clinical data has shown promising outcomes when applied to patients with spinal cord injuries after they received stem cell treatments. Our application for the US patent has recently been granted (U.S. Patent No.10,391,329). </p>
+	
+	<div id="more-graphics" style="padding-bottom: 0;">
+		<video playsinline autoplay muted loop style="width: 100%;"> <source src="res/stemCellTechnology.mp4" type="video/mp4"/> </video>
+	</div>
+	
+  </div>
+</div>
+
+<div id="stem2" class="section" style="overflow: auto;">
+  <div class="card" style="background: url('res/tech_stem_background.png')">
+	<h2 style="color: white;"> STEM Cell Science  </h2>
+	<p style="margin-bottom: 0px; margin-top: 12px; color: white;"> Stem cells have the remarkable potential to develop into many different cell types in the body during early life and growth. In many tissues, they also play a role for internal repair, dividing essentially without limit to replenish other cells as long as the person or animal is still alive. Embryotic stem cells were successfully derived from mice in 1981 and human embryos in 1998. Another breakthrough includes the identification of stem cell-like state in adult cells by genetic reprogramming in 2006. </p>
+	
+	<div style="overflow: auto;">
+	<img id="stem_graphic1" src="res/tech_stem1.png">
+	<div>
+	<p style="margin-top: 18px;  margin-bottom: 18px; color: white;"> These findings have triggered great interests in research for treating diseases such as diabetes, heart disease, and spinal and brain injuries. However, much work remains to be done in the laboratory and the clinic to understand how to use these cells for cell-based therapies to treat diseases.
+	<br/><br/> Among all of the unanswered questions, two are critical and practical for clinical applications. First, how do we mobilize and guide the stem cells to migrate to the injured location?  Second, how do we activate the new tissue grown from stem cells to function particularly in synchronization with the neighboring healthy tissues? Tracking cells expressing green fluorescent proteins in animals, scientists from UC Davis School of Medicine reported (2017) that they have used electric fields within the animal brain to successfully guide neural stem cells transplanted into the brain toward a specific location.  </p>
+	</div>
+	</div>
+	
+	<div style="overflow: auto;">
+	<img id="stem_graphic2" src="res/tech_stem2.png">
+	<div>
+	<p style="margin-top: 18px;  margin-bottom: 18px; color: white;"> These guided stem cells were able to "swim upstream against the fluid flow and natural cues" and head for other locations within the brain that were injured or diseased. These findings clearly open the door for potential applications to many other treatments with stem cells. Thrivikraman et al. (2017) reviewed an important line of work in the stem cell research and concluded that electric field stimulation can be employed to evoke appropriate stem cell responses through signaling pathways and cellular responses, including the participation of reactive oxygen species and heat shock proteins, modulation of intracellular calcium ion concentrations, ATP production and many other events involving the clustering of cell surface receptors, cytoskeletal remodeling and so on. GDC technology of magnetic pulse stimulation is in alliance with the cited works above but has clear advantages in clinical practice with its non-invasive nature. </p>
+	</div>
+	</div>
+  </div>
+</div>
+
+<!--div id="process" class="section" style="overflow: hidden;">
+	<div class="section-graphics left">
+		<canvas id="grid1" width="250" height="375"></canvas>
+		<img src="res/embpProcess.png"></img>
+		<script> drawGrid("grid1", "#C6E4D5", 12); </script>
+	</div>
+	
+	
+	<div class="section-body right">
+	<h2> The EMBP Process </h2>
+	<p style="margin-bottom: 0px; margin-top: 11px;"> First, an electroencephalogram (EEG) is conducted on a 
+	patient experiencing physiological and/or medical conditions in need of treatment. This records the subject’s
+	brain condition and characteristic activity patterns. </p>
+	
+	<p style="margin-top: 9px;"> Next, the raw EEG data is analyzed with a Variable Pulse Intervals (VPI) 
+	transform algorithm resulting in a unique patient EEG Variable Pulse Intervals signal. The pattern of the 
+	EEG signal is used to program the transistor-transitor logic (TTL) pulses, or other triggers to activate a 
+	transcranial magnetic stimulation (TMS) device with the similar variable pulse schedule. </p>
+	
+	<p style="margin-top: 9px;"> The personalized TMS is administered to the patient for a time sufficient to 
+	modulate brain activity, treating the observed anomalies from the EEG to utimately improve the physiological 
+	or clinical condition being treated. </p>
+	
+	<p style="margin-top: 9px;  margin-bottom: 30px"> In contrast to the typical method of focusing on clinical
+	symptoms or behaviors, EMBP focuses on the brain’s physical condition.</p>
+	</div>
+</div-->
+
+
+<footer id="footer">
+	<div class="filler"></div>
+	<script> makeFooter(1); </script>
+</footer>
+
+</body>
+</html>

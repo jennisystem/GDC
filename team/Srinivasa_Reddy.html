@@ -1,0 +1,206 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
+	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="../scripts.js"></script>
+	<link href="../style.css" rel="stylesheet">
+	<style>
+	.image_holder {
+		display: inline-block;
+		width: 30%;
+		float: left;
+		padding-right: 1em;
+	}
+	.image_holder img{
+		width: 100%;
+	}
+	
+	.body{
+	}
+	.body h2{
+		font-family: Abel;
+		font-size: 48px;
+		line-height: 1em;
+		margin: 0;
+		letter-spacing: -0.02em;
+	}
+	.body h3{
+		font-family: Abel;
+		font-size: 28px;
+		line-height: 1em;
+		margin: 0.5em 0 0 0;
+		letter-spacing: -0.02em;
+		color: #4DAAD2;
+	}
+	
+	.tab{
+		padding: 6px 0 0 0; margin: 0;
+		border: 2px solid #90E0E0;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.tab li{
+		line-height: 1em;
+		margin: 0 0 -2px 0;
+		padding: 0.25em 0.75em;
+		font-family: Abel;
+		font-size: 28px;
+		letter-spacing: -0.02em;
+		display: inline;
+		color: #90E0E0;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+	}
+	.tab li.selected{
+		border: 2px solid #90E0E0;
+		background: #FBFBFB;
+	}
+	
+	.tab-content{
+		border: 2px solid #90E0E0;
+		margin: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: 0.75em;
+		display: none;
+		font-family: "Noto Sans", sans;
+		font-size: 22px;
+	}
+	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content li{
+		font-family: "Noto Sans", sans;
+		font-size: 24px;
+	}
+	
+	.tab-content.selected{
+		display: block;
+	}
+	
+	
+	@media only screen and (orientation: landscape) {
+	
+	}
+	@media only screen and (orientation: portrait) {
+		.image_holder {
+			float: none;
+			width: 50%;
+			display: flex;
+			margin: auto;
+			padding: 0;
+		}
+		.body h2, h3{
+			text-align: center;
+		}
+		.body h3{
+			margin-bottom: 0.5em;
+		}
+	}
+	</style>
+	<script>
+		function selectTab(tab, tabName){
+			for(let elem of document.getElementsByClassName("tab-content")){
+				elem.classList.remove("selected")
+			}
+			for(let elem of document.getElementById(tab).children){
+				elem.classList.remove("selected")
+			}
+			document.getElementById(tabName+'_tab').classList.add("selected");
+			document.getElementById(tabName).classList.add("selected");
+		}
+	</script>
+</head>
+
+<!-- Page body -->
+<body>
+<nav id="main-navbar"></nav>
+<script> makeNavbar(0); </script>
+
+<div id="intro" style="padding: 2em 0 0.5em 0; margin-bottom: 0.5em; background: #425EC9;">
+	<h2 style="text-align: center; color: white;"> Meet Our Team of Innovators </h2>
+</div>
+
+<br id="content"/>
+
+<div class="section">
+	<div class="image_holder">
+		<img src="team/placeholder.png"></img>
+	</div>
+
+	<div class="body">
+		<h2> Srinivasa T. Reddy, Ph.D  </h2>
+		<h3> Scientific Advisor </h3>
+	
+		<ul id="tabBar" class="tab">
+			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
+			<li onclick="selectTab('tabBar', 'background');" id="background_tab">Background</li>
+			<li onclick="selectTab('tabBar', 'publications');" id="publications_tab">Publications</li>
+		</ul>
+		
+		<div id="overview" class="tab-content selected">
+			Dr. Srinivasa Reddy received his Bachelor’s degree in Chemistry at Osmania University in Hyderabad, Telangana, India, and his Master’s degree in Biological Sciences at Roorkee University in Roorkee, Uttarakhand, India. He earned his PhD in Comparative Biochemistry at the University of California, Berkeley, and became a postdoctoral scholar at the University of California, Los Angeles for Cell and Molecular Biology. 
+			<br/><br/>
+			He is presently a professor of Molecular and Medical Pharmacology for the Interdepartmental program of Molecular Toxicology.
+			<br/><br/>
+			Dr. Reddy is primarily interested in understanding the expression, regulation, and mechanism of action of enzymes involved in arachidonic acid metabolism. He researches their role in the development of inflammatory diseases with focus on discovering diagnostic and therapeutic molecules for their treatment. 
+			<br/><br/>
+			Currently, his ongoing projects include 
+			<ol>
+				<li>The role of cyclooxygenase 2 (COX2) in the resolution of inflammation in IBD. His laboratory was the first to report that COX2 plays an anti-inflammatory role in the mouse intestine and established a novel mouse model of Crohn’s disease. 
+				<li>The role of Paraoxonase 2 (PON2) in ischemia/reperfusion injury, heart failure, and obesity. His laboratory is conducting pioneering research on PON proteins. They have demonstrated that PON1 an HDL-associated enzyme and its cellular counterparts (PON2 and PON3) participate in the inactivation of inflammatory responses initiated by oxidized lipids. 
+				<li>Development of apoA-I mimetic peptides for the treatment of inflammatory diseases: Over the last fifteen years, based on his work on oxidized lipids and HDL, he has developed a novel class of anti-inflammatory peptides. These agents called apoA-I mimetic peptides show promise for the treatment of inflammatory diseases. More recently, he has developed a novel therapeutic strategy by generating transgenic tomatoes expressing apoA-I mimetic peptides and is preparing to test these peptides in the clinic.
+			</ol>
+		</div>
+		
+		<div id="background" class="tab-content">
+			Education
+			<ul>
+				<li>Osmania University, Hyderabad, A.P., India, B.Sc. (Hons), Chemistry, 1984 </li>
+				<li>Roorkee University, Roorkee, U.P. India, M.Sc. (Hons),, Biological Sciences, 1986 </li>
+				<li>University of California, Berkeley, Ph.D., Comparative Biochemistry, 1992 </li>
+				<li>University of California, Los Angeles, Postdoctoral, Cell and Molecular Biology, 1997 </li>
+			</ul>
+			<br/>
+			Memberships
+			<ul>
+				<li>California NanoSystems Institute </li>
+				<li>Molecular Biology Institute </li>
+				<li>Molecular Pharmacology GPB Home Area </li>
+				<li>Molecular, Cellular & Integrative Physiology GPB Home Area </li>
+				<li>Tumor Immunology Program at the Jonsson Comprehensive Cancer Center (JCCC) </li>
+			</ul>
+
+		</div>
+		
+		<div id="publications" class="tab-content">
+			Publications
+			<ul>
+				<li>Meriwether David, Sulaiman Dawoud, Volpe Carmen, Dorfman Anna, Grijalva Victor, Dorreh Nasrin, Solorzano-Vargas R Sergio, Wang Jifang, O'Connor Ellen, Papesh Jeremy, Larauche Muriel, Trost Hannah, Palgunachari Mayakonda N, Anantharamaiah G M, Herschman Harvey R, Martin Martin G, Fogelman Alan M, Reddy Srinivasa T Apolipoprotein A-I mimetics mitigate intestinal inflammation in COX2-dependent inflammatory bowel disease model The Journal of clinical investigation, 2019; 130(6): .</li>
+				<li>Cedó Lídia, Reddy Srinivasa T, Mato Eugènia, Blanco-Vaca Francisco, Escolà-Gil Joan Carles HDL and LDL: Potential New Players in Breast Cancer Development Journal of clinical medicine, 2019; 8(6): .</li>
+				<li>Shih Diana M, Meng Yonghong, Sallam Tamer, Vergnes Laurent, Shu Michelle L, Reue Karen, Tontonoz Peter, Fogelman Alan M, Lusis Aldons J, Reddy Srinivasa T PON2 Deficiency Leads to Increased Susceptibility to Diet-Induced Obesity Antioxidants (Basel, Switzerland), 2019; 8(1): 154-164.</li>
+				<li>Sulaiman Dawoud, Li Jingyuan, Devarajan Asokan, Cunningham Christine Marie, Li Min, Fishbein Gregory A, Fogelman Alan M, Eghbali Mansoureh, Reddy Srinivasa T Paraoxonase 2 protects against acute myocardial ischemia-reperfusion injury by modulating mitochondrial function and oxidative stress via the PI3K/Akt/GSK-3β RISK pathway Journal of molecular and cellular cardiology, 2019; 129(6): 154-164.</li>
+				<li>Morgantini C, Trifirò S, Tricò D, Meriwether D, Baldi S, Mengozzi A, Reddy S T, Natali A A short-term increase in dietary cholesterol and fat intake affects high-density lipoprotein composition in healthy subjects Nutrition, metabolism, and cardiovascular diseases : NMCD, 2018; 28(6): 575-581.</li>
+				<li>Guirgis Faheem W, Leeuwenburgh Christiaan, Grijalva Victor, Bowman Jennifer, Kalynych Colleen, Moldawer Lyle, Moore Frederick A, Reddy Srinivasa T HDL Cholesterol Efflux is Impaired in Older Patients with Early Sepsis: A Subanalysis of a Prospective Pilot Study Shock (Augusta, Ga.), 2018; 50(1): 66-70.</li>
+				<li>Guirgis Faheem W, Dodani Sunita, Leeuwenburgh Christiaan, Moldawer Lyle, Bowman Jennifer, Kalynych Colleen, Grijalva Victor, Reddy Srinivasa T, Jones Alan E, Moore Frederick A HDL inflammatory index correlates with and predicts severity of organ failure in patients with sepsis and septic shock PloS one, 2018; 13(9): e0203813.</li>
+				<li>Charles-Schoeman Christina, Meriwether David, Lee Yuen Yin, Shahbazian Ani, Reddy Srinivasa T High levels of oxidized fatty acids in HDL are associated with impaired HDL function in patients with active rheumatoid arthritis Clinical rheumatology, 2018; 37(3): 615-622.</li>
+				<li>Singh Rajan, Pervin Shehla, Lee Se-Jin, Kuo Alan, Grijalva Victor, David John, Vergnes Laurent, Reddy Srinivasa T Metabolic profiling of follistatin overexpression: a novel therapeutic strategy for metabolic diseases Diabetes, metabolic syndrome and obesity : targets and therapy, 2018; 11: 65-84.</li>
+				<li>Devarajan Asokan, Su Feng, Grijalva Victor, Yalamanchi Meghna, Yalamanchi Ashna, Gao Feng, Trost Hannah, Nwokedi Josephine, Farias-Eisner Gina, Farias-Eisner Robin, Fogelman Alan M, Reddy Srinivasa T Paraoxonase 2 overexpression inhibits tumor development in a mouse model of ovarian cancer Cell death & disease, 2018; 9(3): 392.</li>
+				<li>Li Wei, Kennedy David, Shao Zhili, Wang Xi, Kamdar Andre Klaassen, Weber Malory, Mislick Kayla, Kiefer Kathryn, Morales Rommel, Agatisa-Boyle Brendan, Shih Diana M, Reddy Srinivasa T, Moravec Christine S, Tang W H Wilson Paraoxonase 2 prevents the development of heart failure Free radical biology & medicine, 2018; 121: 117-126.</li>
+				<li>Charles-Schoeman C, Gugiu G B, Ge H, Shahbazian A, Lee Y Y, Wang X, Furst D E, Ranganath V K, Maldonado M, Lee Terry, Reddy S T Remodeling of the HDL proteome with treatment response to abatacept or adalimumab in the AMPLE trial of patients with rheumatoid arthritis Atherosclerosis, 2018; 275: 107-114.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" style="clear: both;">
+	<div class="filler"></div>
+	<script> makeFooter(0); </script>
+</footer>
+
+</body>
+</html>

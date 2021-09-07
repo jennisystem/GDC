@@ -1,0 +1,194 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
+	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="scripts.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<style>
+	/* [---Title---] */
+	#title img{ height: 100%; object-fit: cover; }
+	
+	/*Card style*/
+	ul.cards{
+		display: flex;		flex-wrap: wrap;
+		list-style-type: none;	padding: 0;
+		margin-left: 0%; margin-right: 0%;
+	}
+	.cards li {
+		width: 30%;		margin: 1%;
+		float: left;	padding: 0.5%;
+	}
+	.cards li div{
+		display: flex;
+		flex-direction: column;
+	}
+	.cards li * { font: 22px Noto Sans, sans-serif; margin: 9px 0; }
+	.cards img {margin: auto;}
+	.cards li canvas {
+		position: absolute;	left: 11%;
+		width: 60%;			z-index: 1;
+	}
+	.cards li img{
+		max-width: 60%;
+		height: auto;
+		margin: 11% 0 0 0;
+		z-index: 2;
+	}
+	.cards li h3{ font: 30px Abel, sans-serif; text-align: center;}
+	.cards li h4{ text-align: center;}
+	
+	
+	div.header {
+		display: inline-block;		margin-top: 30px;
+		left: 50%;	transform: translate(-50%, 0);
+	}
+	div.header h2 {
+		 text-align: center;
+		 line-height: 1; 	margin: 0px 0px 8px 0px;
+	}
+	p.gimmick-line{
+		border-top: 3px solid #4DAAD2;	border-left: 3px solid #4DAAD2;
+		font-size: 22px;
+		height: 7px; 	top: 0;		transform: translate(0, -350%);
+		left: -2em;		width: 2em;
+	}
+	p.label { left: -2em; color: #4DAAD2; }
+	
+	@media only screen and (orientation: landscape) {
+		#intro p{ padding: 0 4em;}
+	}
+	@media only screen and (orientation: portrait) {
+		.cards li {
+			width: 47%;
+		}
+	}
+	</style>
+</head>
+
+<!-- Page body -->
+<body>
+<nav id="main-navbar"></nav>
+<script> makeNavbar(0); </script>
+
+<div id="title">
+	<div id="titleGraphics">
+		<img src="res/team_main.png"></img>
+	</div>
+	
+	<div id="titleTextContainer">
+	<h1 id="titleTitle"> OUR TEAM OF <br/> INNOVATORS </h1>
+	</div>
+</div>
+
+<div id="intro" class="section">
+	<p style="font-family: Abel;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: -0.02em;
+text-align: center;
+"> We are a team of scientists, doctors, technologists, and entrepreneurs with a diverse background in medicine, engineering, and technology development. </p>
+</div>
+
+<div id="exec" class="section" style="overflow:auto;">
+	<div class="header">
+		<p class="gimmick-line"></p>
+		<p class="label"> 01 </p>
+		<h2> Executive Leadership </h2>
+	</div>
+	
+	<ul class="cards">
+		<li onclick="window.location = 'team/Ian.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Ian</h3>
+			<h4> President </h4>
+		</div></li>
+		
+		<li onclick="window.location = 'team/JJ.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> JJ </h3>
+			<h4> Founder </h4>
+		</div></li>
+		
+		<li onclick="window.location = 'team/Conway.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Conway </h3>
+			<h4> Founder </h4>
+		</div></li>
+	</ul>
+</div>
+
+<div id="adv" class="section" style="overflow:auto;">
+	<div class="header">
+		<p class="gimmick-line"></p>
+		<p class="label"> 02 </p>
+		<h2> Scientific Advisors </h2>
+	</div>
+	
+	<ul class="cards">
+		<li onclick="window.location = 'team/Charles_Liu.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Charles Liu, M.D., Ph.D.</h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+		
+		<li onclick="window.location = 'team/Srinivasa_Reddy.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Srinivasa T. Reddy, Ph.D. </h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+		
+		<li onclick="window.location = 'team/Jin.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Jin </h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+		
+		<li onclick="window.location = 'team/Fabio.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Fabio </h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+	</ul>
+</div>
+<div id="management" class="section" style="overflow:auto;">
+	<div class="header">
+		<p class="gimmick-line"></p>
+		<p class="label"> 03 </p>
+		<h2> Management </h2>
+	</div>
+	
+	<ul class="cards">
+		<li onclick="window.location = 'team/Tom_Wu.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Tom Wu </h3>
+			<!--h4> President </h4-->
+		</div></li>
+		
+		<li onclick="window.location = 'team/Liu_Bowen.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Liu Bowen </h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+		
+		<li onclick="window.location = 'team/Jack_Song.html#content'"><div>
+			<img src="res/team/placeholder_formatted.png" style="margin: auto;"></img>
+			<h3> Jack Song </h3>
+			<!--h4> Founder </h4-->
+		</div></li>
+	</ul>
+</div>
+
+<footer id="footer" style="margin-top: 0;">
+	<div class="filler"></div>
+	<script> makeFooter(0); </script>
+</footer>
+
+</body>
+</html>

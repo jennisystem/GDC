@@ -1,0 +1,150 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
+	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="../scripts.js"></script>
+	<link href="../style.css" rel="stylesheet">
+	<style>
+	.image_holder {
+		display: inline-block;
+		width: 30%;
+		float: left;
+		padding-right: 1em;
+	}
+	.image_holder img{
+		width: 100%;
+	}
+	
+	.body{
+	}
+	.body h2{
+		font-family: Abel;
+		font-size: 48px;
+		line-height: 1em;
+		margin: 0;
+		letter-spacing: -0.02em;
+	}
+	.body h3{
+		font-family: Abel;
+		font-size: 28px;
+		line-height: 1em;
+		margin: 0.5em 0 0 0;
+		letter-spacing: -0.02em;
+		color: #4DAAD2;
+	}
+	
+	.tab{
+		padding: 6px 0 0 0; margin: 0;
+		border: 2px solid #90E0E0;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.tab li{
+		line-height: 1em;
+		margin: 0 0 -2px 0;
+		padding: 0.25em 0.75em;
+		font-family: Abel;
+		font-size: 28px;
+		letter-spacing: -0.02em;
+		display: inline;
+		color: #90E0E0;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+	}
+	.tab li.selected{
+		border: 2px solid #90E0E0;
+		background: #FBFBFB;
+	}
+	
+	.tab-content{
+		border: 2px solid #90E0E0;
+		margin: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: 0.75em;
+		display: none;
+	}
+	
+	.tab-content.selected{
+		display: block;
+	}
+	
+	
+	@media only screen and (orientation: landscape) {
+	
+	}
+	@media only screen and (orientation: portrait) {
+		.image_holder {
+			float: none;
+			width: 50%;
+			display: flex;
+			margin: auto;
+			padding: 0;
+		}
+		.body h2, h3{
+			text-align: center;
+		}
+		.body h3{
+			margin-bottom: 0.5em;
+		}
+	}
+	</style>
+	<script>
+		function selectTab(tab, tabName){
+			for(let elem of document.getElementsByClassName("tab-content")){
+				elem.classList.remove("selected")
+			}
+			for(let elem of document.getElementById(tab).children){
+				elem.classList.remove("selected")
+			}
+			document.getElementById(tabName+'_tab').classList.add("selected");
+			document.getElementById(tabName).classList.add("selected");
+		}
+	</script>
+</head>
+
+<!-- Page body -->
+<body>
+<nav id="main-navbar"></nav>
+<script> makeNavbar(0); </script>
+
+<div id="intro" style="padding: 2em 0 0.5em 0; margin-bottom: 0.5em; background: #425EC9;">
+	<h2 style="text-align: center; color: white;"> Meet Our Team of Innovators </h2>
+</div>
+
+<br id="content"/>
+
+<div class="section">
+	<div class="image_holder">
+		<img src="team/placeholder.png"></img>
+	</div>
+
+	<div class="body">
+		<h2> Jyh-Chung "JJ" Han </h2>
+		<h3> Co-Founder </h3>
+	
+		<ul id="tabBar" class="tab">
+			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
+		</ul>
+		
+		<p id="overview" class="tab-content selected">
+			Jyh-Chung Han graduated from the National Taipei University of Technology with a BA in Civil Engineering. Since then, he has gained extensive business experience in real estate, construction, company management, and company operations within the Koo Organization. In the past 30 years, he has successfully established and operated many oversea corporations for the Koo family including, but not limited to, managing resorts, hotels, medical facilities, and transportation. His counsel has been widely sought in these various fields. 
+			<br/><br/>
+			Mr. Han co-founded Newport Brain Research Laboratory (NBRL), Brain Treatment Center (BTC), and helped create the MRT and MeRT technologies currently used by WaveNeuroscience, Inc. 
+		</p>
+	</div>
+</div>
+
+<footer id="footer" style="clear: both;">
+	<div class="filler"></div>
+	<script> makeFooter(0); </script>
+</footer>
+
+</body>
+</html>
