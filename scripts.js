@@ -30,19 +30,19 @@ function makeFooter(activePage){
 			'<div class="sitemap-col">'+
 				'<h2>GDC</h2>'+
 				'<ul>'+
-					'<li><a href="Home">Home</a></li>'+
-					'<li><a href="Technology">Technology</a></li>'+
-					'<li><a href="Team">Team</a></li>'+
+					'<li><a href="home.html">Home</a></li>'+
+					'<li><a href="technology.html">Technology</a></li>'+
+					'<li><a href="innovators.html">Team</a></li>'+
 				'</ul>'+
 			'</div>'+
 			'<div class="sitemap-col">'+
 				'<h2>NOETHERTECH</h2>'+
 				'<ul>'+
-					'<li><a href="">Home</a></li>'+
-					'<li><a href="">Technology</a></li>'+
-					'<li><a href="">About Us</a></li>'+
-					'<li><a href="">History</a></li>'+
-					'<li><a href="">Science</a></li>'+
+					'<li><a href="https://www.noethertech.com/">Home</a></li>'+
+					'<li><a href="https://www.noethertech.com/technology">Technology</a></li>'+
+					'<li><a href="https://www.noethertech.com/about-us">About Us</a></li>'+
+					'<li><a href="https://www.noethertech.com/history">History</a></li>'+
+					'<li><a href="https://www.noethertech.com/science">Science</a></li>'+
 				'</ul>'+
 			'</div>'+
 			'<div class="sitemap-col">'+
