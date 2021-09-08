@@ -27,11 +27,11 @@ function makeFooter(activePage){
 	var footer = document.getElementById("footer");
 	footer.innerHTML += '<div id="sitemap">'+
 		'<div class="sitemap-col">'+
-			'<div class="logoName" style="font-size: 48px;"><a href="index.html" class="logo"></a><a href="index.html" class="companyName">NoetherTech</a></div>'+
+			'<div class="logoName" style="font-size: 48px;"><a href="home.html" class="logo"></a><a href="home.html" class="companyName">GDC</a></div>'+
 			'<p>&#169;2021 Noether Sciences and Technologies Inc. ALL RIGHTS RESERVED</p>'+
 		'</div>'+
 		'<div class="sitemap-col true-sitemap">'+
-			'<a href="index.html"' + ((activePage==0) ? ' class="active"' : '') + '>Homepage</a>'+
+			'<a href="home.html"' + ((activePage==0) ? ' class="active"' : '') + '>Homepage</a>'+
 			'<a href="our_technology.html"' + ((activePage==1) ? ' class="active"' : '') + '>Technology</a>'+
 			'<a id="sitemap-company-btn"class="directory' + ((activePage==3 || activePage==4) ? ' active' : '') + '" onclick="showSitemapCompany();" style="cursor: pointer;"> Company <i class="gg-chevron-down" style="display: inline; margin-left: 1em; font-size: 16px;"></i> </a>'+
 			'<div class="sitemap-dropdown" id="sitemap-company">'+
@@ -58,23 +58,13 @@ function showSitemapCompany(){
 
 function makeNavbar(activePage){
 	var navBar = document.getElementById("main-navbar");
-	navBar.innerHTML += '<div class="logoName"><a href="index.html" class="logo"></a>'+
-		'<a href="index.html" class="companyName">NoetherTech</a></div>'+
+	navBar.innerHTML += '<div class="logoName"><a href="home.html" class="logo"></a>'+
+		'<a href="home.html" class="companyName">GDC</a></div>'+
 		'<ul id="main-navbar-navigation"><li><a href="our_technology.html"' + ((activePage==1) ? ' class="active"' : '') + '>Technology</a></li>'+
-		'<li><a href="science.html"' + ((activePage==2) ? ' class="active"' : '') + '>Science</a></li>'+
-		'<li class="navbar-dropdown"><a id="company-drop-btn" onmouseover="showCompanyDropdown()" onmouseout="hideCompanyDropdown();"' + ((activePage==3 || activePage==4) ? ' class="active"' : '') + ' style="cursor: pointer;">Company</a>'+
-			'<ul id="companyDropdown" onmouseover="showCompanyDropdown()" onmouseout="hideCompanyDropdown();">'+
-			'<li><a href="about_us.html"' + ((activePage==3) ? ' class="active"' : '') + '>About Us</a></li>'+
-			'<li><a href="history.html"' + ((activePage==4) ? ' class="active"' : '') + '>History</a></li></ul></li>'+
-		'<li id="company-drop-btn-mob"><a onclick="toggleCompanyDropdown();"' + ((activePage==3 || activePage==4) ? ' class="active"' : '') + ' style="cursor: pointer;">Company <i class="gg-chevron-down" style="display: inline; margin-left: 1em; font-size: 16px;"></i> </a></li>'+
-		'<li><a class="dropdown-opts" href="about_us.html"' + ((activePage==3) ? ' class="active"' : '') + '>About Us</a></li>'+
-		'<li><a class="dropdown-opts" href="history.html"' + ((activePage==4) ? ' class="active"' : '') + '>History</a></li>'+
-		'<li id="contactUsButton"><a href="">Contact Us</a></li>'+
-		'</ul><span id="contactUs"><a class="button" href="">CONTACT US</a><p></p></span>'+
+		'<li><a href="innovators.html"' + ((activePage==2) ? ' class="active"' : '') + '>Team</a></li>'+
+		'<li id="contactUsButton"><a href="contact_us.html">Contact Us</a></li>'+
+		'</ul><span id="contactUs"><a class="button" href="contact_us.html">CONTACT US</a><p></p></span>'+
 		'<a onclick="showMenuBar()" id="dropdown" style="cursor: pointer;"></a>';
-		
-	let companyDropdownElem = document.getElementById("companyDropdown");
-	companyDropdownElem.style.display == "none";
 }
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position

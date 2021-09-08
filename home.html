@@ -14,6 +14,10 @@
 	/* [---Title---] */
 	#title {height: auto;}
 	#title img{ width: 100%; height: 44vw; object-fit: cover; }
+	#title #titleTextContainer{
+		position: absolute;		width: 70%;
+		top: 11.5vw;	left: 10%;
+	}
 	#titleTextContainer h1{ width: 70%; }
 	#titleTextContainer p{ text-align: center; }
 	
@@ -141,11 +145,19 @@
 		#technology .sec-header {
 			left: 50%; transform: translate(-50%, 0);
 		}
+		.flip-card-back p, .flip-card-back a{
+			font-size: 16px;
+			margin: 0;
+		}
+		.flip-card-back {overflow: auto;}
 	}
 	
 	@media only screen and (orientation: landscape) {
 		#technology .section-graphics.left{
 			transform: translate(0, 3em);
+		}
+		#technology .section-body.right{
+			padding-right: 3em; 
 		}
 		.filler {
 			position: absolute;
@@ -159,6 +171,10 @@
 			margin-top: 120px;
 			padding-top: 0px;
 		}
+		.flip-card-back p{
+			margin: 1em; font-size: 22px;
+		}
+		.flip-card-auto a {font-size: 20px;}
 	}
 	</style>
 </head>
@@ -174,7 +190,7 @@
 	</div>
 	<div id="titleTextContainer">
 	<h1 id="titleTitle"> BREAKTHROUGH RESEARCH AND TECHNOLOGY <br/> </h1>
-	<p id="titleSubtext"> NOVEL WAYS TO TREAT A PLETHORA OF CONDITIONS </p>
+	<p id="titleSubtext" class="web"> NOVEL WAYS TO TREAT A PLETHORA OF CONDITIONS </p>
 	</div>
 </div>
 
@@ -212,7 +228,7 @@
 		<img src="res/home_ourTechnologies.png"></img>
 	</div>
 	
-	<div class="section-body right" style="padding-right: 3em; padding-top: 0;">
+	<div class="section-body right" style="padding-top: 0;">
 	<h3> Electromagnetic Brain Pulse (EMBP) </h3>
 	<p style="margin-bottom: 6px; margin-top: 11px;"> EMBP is a personalized, non-pharmaceutical, and non-invasive neuromodulation treatment that alters nerve activity through the targeted delivery of stimulus to specific neurological sites in the body in order to help restore and optimize brain functionality. </p>
 	<a class="link-simple" href="our_technology.html#embp"> LEARN MORE</a> <!--TODO: INSERT LINK-->
@@ -246,8 +262,8 @@
 		<div class="flip-card-back">
 		  <div style="display: flex;">
 			<div style="margin-top: 0;">
-			  <p style="margin: 1em; font-size: 22px;">NoetherTech is a neuro-optimization company that researches, diagnoses, and treats neurological and psychiatric disorders.</p>
-			  <a class="link-simple" style="font-size: 20px;"> Learn More </a>
+			  <p>NoetherTech is a neuro-optimization company that researches, diagnoses, and treats neurological and psychiatric disorders.</p>
+			  <a class="link-simple"> Learn More </a>
 			</div>
 		  </div>
 		</div>

@@ -1,5 +1,9 @@
 /* [---General---] */
 html {scroll-behavior: smooth;}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body { background-color: white; margin: 0; }
 * { font: 48px Abel, sans-serif; color: #02223B; }
 p { font: 18px Noto Sans, sans; line-height: 150%;}
@@ -30,6 +34,10 @@ a.button:hover::after{
 	a.button {
 		padding: 10px 1em 10px 1em;
 	}
+	.web {display: none;}
+}
+@media only screen and (orientation: landscape) {
+	.mobile{display:none;}
 }
 a.link-simple {
 	color: #77ABEF;
@@ -38,8 +46,6 @@ a.link-simple {
 }
 a.link-simple:link { text-decoration: none; }
 a.link-simple:hover { text-decoration: none; opacity: 0.8;}
-
-
 
 	
 /* [---Footer---] */
@@ -113,7 +119,7 @@ footer .body *{ text-align: center; color: white;}
 
 
 /* [---Title---] */
-#title { width: 100%;	height: 44vw;	padding: 0;}
+#title { width: 100%;	height: 44vw;	padding: 0; position: relative;}
 #title #titleGraphics{ overflow: hidden; }
 #title img{
 	padding: 0;		margin: 0;
@@ -121,7 +127,7 @@ footer .body *{ text-align: center; color: white;}
 }
 #title #titleTextContainer{
 	position: absolute;		width: 70%;
-	top: 11.5vw;	left: 10%;
+	bottom: 20vmax;	left: 10%;
 }
 #titleTextContainer h1{
 	float: left;	text-align: left;
@@ -196,11 +202,13 @@ nav .navbar-dropdown{ align-self: flex-start; }
 #companyDropdown *{text-align: left; padding-left: 1.25em; margin-left: -1em;}
 nav .navbar-dropdown ul{ display: none; }
 nav a.button::after{ content: ""; }
-.logoName { min-width: 5em; diplay: flex; align-items: center; 	height: 1.25em; }
+.logoName { min-width: 3em; diplay: flex; align-items: center; 	height: 1.25em; transform: translate(0, -0.15em);}
 .logo {
 	display: inline-block;
 	background-image: url('res/logo.png');
-	background-size: cover;
+	background-size: contain; background-position: center;
+	background-repeat: no-repeat;
+	transform: translate(0, 0.25em);
 	font-size: 48px;	min-height: 1em; width: 1.2em;
 }
 .companyName{
@@ -224,7 +232,7 @@ nav a.button::after{ content: ""; }
 #companyDropdown *{ position: relative;	width: 100%; }
 .dropdown-opts {display:none;}
 nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
-.active { color:#90E0E0; } /*color: black; background-color: #76C4E5; font-weight: 600;*/
+.active { color:#425EC9; } /*color: black; background-color: #76C4E5; font-weight: 600;*/
 #dropdown {
 	background-image: url('res/hamburger-icon.png');	background-size: 100% 100%;
 	position: absolute; top:1.25em; right: 10%; width: 1em; height: 1em;
@@ -312,8 +320,8 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 	padding: 0.85em 10%;
 	transition: 1s;
 }
-.fixed-nav li a:hover:not(.active):not(.companyName) { color:#0D394C; } /*background-color: #0F4860; font-weight: 600;*/
-.fixed-nav .active { color:#0D394C; } /*color: black; background-color: #76C4E5; font-weight: 600;*/
+.fixed-nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; } /*background-color: #0F4860; font-weight: 600;*/
+.fixed-nav .active { color:#90E0E0; } /*color: black; background-color: #76C4E5; font-weight: 600;*/
 .fixed-nav #dropdown{
 	top: 0.4em;
 	transition: 1s;
