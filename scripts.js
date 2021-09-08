@@ -31,7 +31,7 @@ function makeFooter(activePage){
 				'<h2>GDC</h2>'+
 				'<ul>'+
 					'<li><a href="home.html">Home</a></li>'+
-					'<li><a href="technology.html">Technology</a></li>'+
+					'<li><a href="our_technology.html">Technology</a></li>'+
 					'<li><a href="innovators.html">Team</a></li>'+
 				'</ul>'+
 			'</div>'+
