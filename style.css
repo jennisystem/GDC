@@ -252,13 +252,14 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 	}
 	#title #titleTextContainer{ top: 20vw; }
 	nav ul{
-		display: flex;		position: absolute;
+		display: flex;		position: relative;
 		float: right;
 		flex-direction: column;
+		overflow: auto; clear: left;
 		width: 50%;	position: absolute;
 		top: 2em; 		right: 0;
 		height: 100vh;
-		background: #1F789D;
+		background: #7A8EDD;
 		transform: translate(110%, 0);
 		transition: 1s;
 	}
@@ -268,7 +269,7 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 	}
 	nav li{ width: 100%;}
 	nav li a {
-		background-color: #1F789D;	padding: 14px 16px;
+		background-color: #7A8EDD;	padding: 14px 16px;
 		text-align: left;			font: 18px Abel, sans-serif;
 		padding-left: 20%;
 		
@@ -319,7 +320,9 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 	background-color: #425EC9; /*rgb(31, 120, 157, 1); /**/
 	padding: 0.85em 10%;
 	transition: 1s;
+	position: fixed;
 }
+
 .fixed-nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; } /*background-color: #0F4860; font-weight: 600;*/
 .fixed-nav .active { color:#90E0E0; } /*color: black; background-color: #76C4E5; font-weight: 600;*/
 .fixed-nav #dropdown{
@@ -328,4 +331,41 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 }
 .fixed-nav #contactUs a {
 	border: 1px solid white;
+}
+.fixed-nav ul{
+	top: 1.6em;
+}
+
+#sitemap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#sitemap-content{
+	width: 100%;
+	display: flex;
+	clear: none;
+}
+#sitemap ul{
+  display: flex;
+	flex-direction: column;
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
+#sitemap li{display: block;}
+#sitemap a:not(a.companyName, .logo){ font: 16px Noto Sans TC, sans;}
+#sitemap a:link { text-decoration: none; }
+#sitemap a:hover { text-decoration: none; opacity: 0.8;}
+#sitemap h2 {margin: 0; margin-bottom: 0.5em; font: 16px Noto Sans TC, sans; border-bottom: 1px solid #41EAD4; display: inline-block; padding-right: 2em;}
+
+@media only screen and (orientation: portrait) {
+	#sitemap-content{ 
+		flex-direction: column;
+		justify-content: center;
+	}
+	#sitemap ul{
+		justify-content: center;
+	}
+	#sitemap h2 {position: relative; left: 50%; transform: translate(-50%, 0); padding-left: 2em;}
+	.sitemap-col * {text-align: center; margin: auto;}
 }

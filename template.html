@@ -8,8 +8,8 @@
 	<link href='https://css.gg/chevron-down.css' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="../scripts.js"></script>
-	<link href="../style.css" rel="stylesheet">
+	<script src="scripts.js"></script>
+	<link href="style.css" rel="stylesheet">
 	<style>
 	.image_holder {
 		display: inline-block;
@@ -123,27 +123,40 @@
 
 <div class="section">
 	<div class="image_holder">
-		<img src="team/placeholder.png"></img>
+		<img src="placeholder.png"></img>
 	</div>
 
 	<div class="body">
-		<h2> Liu Bowen </h2>
-		<h3> Finance </h3>
+		<h2> Name </h2>
+		<h3> Position </h3>
 	
 		<ul id="tabBar" class="tab">
 			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
 			<li onclick="selectTab('tabBar', 'background');" id="background_tab">Background</li>
+			<li onclick="selectTab('tabBar', 'memberships');" id="memberships_tab">Memberships</li>
+			<li onclick="selectTab('tabBar', 'publications');" id="publications_tab">Publications</li>
+			<li onclick="selectTab('tabBar', 'awards');" id="awards_tab">Awards</li>
 		</ul>
 		
-		<div id="overview" class="tab-content selected">
-			Liu Bowen was born in Taiwan and graduated from the Finance and Taxation Department of Feng Chia University in 1986. His main work experience is accounting and financial management, as well as financial related internal control and risk management and auditing. He has considerable practical experience in dealing with financial institutions, corporate fund management, tax planning, cost control, etc.
-		</div>
+		<p id="overview" class="tab-content selected">
+			Overview
+		</p>
 		
-		<div id="background" class="tab-content">
-			Mr. Liu has more than 8 years of experience in financial accounting and stock work in listing enterprise, Taiwan. He was the chief financial officer of the Construction Group in Beijing and Shanghai, China from 2003 to 2006. He is responsible for the company's financial accounting management and related management.
-			<p></p>
-			Mr. Liu has been a financial accountant in a subsidiary of the KOOS family business in Taiwan for more than 20 years. He has also served as a director and supervisor, participated in the company's listing and counseling, and has more than 30 years of experience in corporate accounting and financial management. He is also familiar with the accounting and financial systems and leads departmental staff to accomplish the goals set by the company.
-		</div>
+		<p id="background" class="tab-content">
+			Background
+		</p>
+		
+		<p id="memberships" class="tab-content">
+			Memberships
+		</p>
+		
+		<p id="publications" class="tab-content">
+			Publications
+		</p>
+		
+		<p id="awards" class="tab-content">
+			Awards
+		</p>
 	</div>
 </div>
 

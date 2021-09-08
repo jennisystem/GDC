@@ -26,11 +26,42 @@ function drawGrid(elemId, dotColor, numX=9){
 function makeFooter(activePage){
 	var footer = document.getElementById("footer");
 	footer.innerHTML += '<div id="sitemap">'+
-		'<div class="sitemap-col">'+
-			'<div class="logoName" style="font-size: 48px;"><a href="home.html" class="logo"></a><a href="home.html" class="companyName">GDC</a></div>'+
-			'<p>&#169;2021 Noether Sciences and Technologies Inc. ALL RIGHTS RESERVED</p>'+
+		'<div id="sitemap-content">'+
+			'<div class="sitemap-col">'+
+				'<h2>GDC</h2>'+
+				'<ul>'+
+					'<li><a href="Home">Home</a></li>'+
+					'<li><a href="Technology">Technology</a></li>'+
+					'<li><a href="Team">Team</a></li>'+
+				'</ul>'+
+			'</div>'+
+			'<div class="sitemap-col">'+
+				'<h2>NOETHERTECH</h2>'+
+				'<ul>'+
+					'<li><a href="">Home</a></li>'+
+					'<li><a href="">Technology</a></li>'+
+					'<li><a href="">About Us</a></li>'+
+					'<li><a href="">History</a></li>'+
+					'<li><a href="">Science</a></li>'+
+				'</ul>'+
+			'</div>'+
+			'<div class="sitemap-col">'+
+				'<h2>CONTACT US</h2>'+
+				'<ul>'+
+					'<li><a href="mailto:info@generaldatacollection.com">info@generaldatacollection.com</a></li>'+
+				'</ul>'+
+			'</div>'+
 		'</div>'+
-		'<div class="sitemap-col true-sitemap">'+
+		
+		
+		'<div>'+
+			'<p><br/></p>'+
+			'<p style="text-align: center; color: white;">&#169;2021 Noether Sciences and Technologies Inc. ALL RIGHTS RESERVED</p>'+
+		'</div>'+
+		'<div>'+
+			'<div class="logoName sitemap-logo" style="font-size: 48px; text-align: center;"><a href="#title" class="logo"></a><a href="#title" class="companyName">GDC</a></div>'+
+		'</div>'+
+		/*'<div class="sitemap-col true-sitemap">'+
 			'<a href="home.html"' + ((activePage==0) ? ' class="active"' : '') + '>Homepage</a>'+
 			'<a href="our_technology.html"' + ((activePage==1) ? ' class="active"' : '') + '>Technology</a>'+
 			'<a id="sitemap-company-btn"class="directory' + ((activePage==3 || activePage==4) ? ' active' : '') + '" onclick="showSitemapCompany();" style="cursor: pointer;"> Company <i class="gg-chevron-down" style="display: inline; margin-left: 1em; font-size: 16px;"></i> </a>'+
@@ -42,7 +73,7 @@ function makeFooter(activePage){
 		'<div class="sitemap-col">'+
 			'<p><a href="mailto:info@noethertech.com">info@noethertech.com</a></p>'+
 		'</div>'+
-		'<a id="backToTop" href="#title">&#x2191;</a>'+
+		'<a id="backToTop" href="#title">&#x2191;</a>'+*/
 	'</div>';
 }
 
@@ -76,6 +107,7 @@ function scrollHandler() {
 	} else {
 		navbar.classList.remove("fixed-nav");
 	}
+	console.log("Hello");
 }
 
 // When the user scrolls the page, execute myFunction
