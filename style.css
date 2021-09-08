@@ -336,10 +336,12 @@ nav li a:hover:not(.active):not(.companyName) { color:#90E0E0; }
 	top: 1.6em;
 }
 
+footer { margin-top: 0;}
 #sitemap{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 0;
 }
 #sitemap-content{
 	width: 100%;
