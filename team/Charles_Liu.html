@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,12 +65,12 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
@@ -83,7 +78,7 @@
 	}
 	
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;} .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -143,13 +138,13 @@
 			<li onclick="selectTab('tabBar', 'publications');" id="publications_tab">Publications</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Dr. Charles Liu completed his undergraduate education in Chemical Engineering at the University of Michigan, Ann Arbor, and went on to receive his PhD in Chemical/Biomedical Engineering at Rice University. He then attended the Yale University School of Medicine, receiving his MD degree. He trained in neurosurgery at the University of Southern California Affiliated Hospitals.
-			<br/><br/>
+			<p></p>
 			He is presently a professor of neurosurgery and neurology and holds the Apuzzo Professorship for Advanced Neurosurgery. Dr. Liu is also Director of the USC Center for Neurorestoration, which functions to bring scientific advances in the laboratory and engineers new tools to restore function to the injured and diseased nervous system. In addition, he serves as the Surgical Director of the USC Comprehensive Epilepsy Program, one of the premier and highest volume surgical epilepsy programs in the world.
-			<br/><br/>
+			<p></p>
 			Dr. Liu has received numerous research awards and made a large number of visitorships/invited lectures throughout the world. He serves as Associate Editor of the journal, WORLD NEUROSURGERY and the  principal neurosurgical consultant for the NCAA USC Trojans Athletics Department. He is also a member of the Executive Committee of the Congress of Neurological Surgeons. At Rancho los Amigos, Dr. Liu is Chair of the Department of Neurosurgery and is developing cutting-edge programs in restorative neurosurgery, collaborating with scientists at Caltech and USC, among others.
-		</p>
+		</div>
 		
 		<div id="background" class="tab-content">
 			Education

@@ -12,6 +12,7 @@
 	<link href="style.css" rel="stylesheet">
 	<style>
 	/* Title*/
+	body {background: #F3F3F3;}
 	#title img{ width: 100%; object-fit: cover; }
 	
 	/* Section Graphics */
@@ -36,6 +37,7 @@
 		box-shadow: -5px 10px 100px 5px rgba(144, 224, 224, 0.26);
 		border-radius: 0.5em;
 		padding: 0.5em 1em 1em 1.5em;
+		background: white;
 	}
 	
 	#embp .section-graphics { width: 45%; padding: 0 0 60px 0; transform: translate(-10%, 0);}
@@ -46,7 +48,7 @@
 	#embp .section-body { margin-right: 48%;}
 	#in-page-nav .body {width: 45%; float:right;}
 	#in-page-nav * { color: #1F789D; font: 24px Abel, sans-serif; }
-	#in-page-nav ol { margin: 0; }
+	#in-page-nav ol { margin: 0; list-style-type: none;}
 	#in-page-nav h3 { 
 		margin: 0 0 -1em -0.5em; 
 		padding: 0.5em 0 1em 0.5em;
@@ -62,7 +64,8 @@
 		 width: 30%;
 		 margin-left: 0.5em;
 	}
-	#science .card{margin-left: 10%;}
+	#science, #stem2 { padding-top: 0;}
+	#science .card, #stem2 .card{margin-left: 10%;}
 	#more-graphics{
 		width: 40%;
 		margin: auto;
@@ -93,7 +96,7 @@
 			 margin-left: 10%;
 			 margin-bottom: 0.5em;
 		}
-		#science .card{margin-left: 0;}
+		#science .card, #stem2 .card{margin-left: 0;}
 		#more-graphics{
 			width: 80%;
 		}
@@ -129,9 +132,9 @@
 	<div class="toc">
 		<h3 style="line-height: 1;"> GO TO: </h3>
 		<ol>
-			<li><a href="#embp"> EMBP</a></li>
-			<li><a href="#viral"> Magnetic Stimulation for Viral Infection</a></li>
-			<li><a href="#stem1">Maggnetic Stimulation and STEM Cells</a></li>
+			<li><a href="#embp"> 01. EMBP</a></li>
+			<li><a href="#viral"> 02. Magnetic Stimulation for Viral Infection</a></li>
+			<li><a href="#stem1">03. Magnetic Stimulation and STEM Cells</a></li>
 		</ol>
 	</div>
 </div>
@@ -141,7 +144,7 @@
 	<div class="sec-header" style="position: relative; display: inline-block;">
 		<span>
 			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid #4DAAD2; border-left: 1px solid #4DAAD2;" ></p>
-			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 01</h2>
+			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.55em, 1.5em);"> 01</h2>
 		</span>
 		<h2> Electromagnetic Brain Pulse (EMBP)  </h2>
 	</div>
@@ -160,8 +163,8 @@
   <div class="card" style="background: url('res/tech_stem_background.png')">
 	<div class="sec-header" style="position: relative; display: inline-block;">
 		<span>
-			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid white; border-left: 1px solid white;" ></p>
-			<h2 style="color: white; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 02</h2>
+			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid #ECD9C8; border-left: 1px solid #ECD9C8;" ></p>
+			<h2 style="color: #ECD9C8; position: absolute; font-size: 20px; transform: translate(-1.55em, 1.5em);"> 02</h2>
 		</span>
 		<h2 style="color: white;"> Magnetic Stimulation for Viral Infection  </h2>
 	</div>
@@ -192,7 +195,7 @@
 	<div class="sec-header" style="position: relative; display: inline-block;">
 		<span>
 			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-1.7em, 1.25em); border-top: 1px solid #4DAAD2; border-left: 1px solid #4DAAD2;" ></p>
-			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.3em, 1.25em);"> 03</h2>
+			<h2 style="color: #4DAAD2; position: absolute; font-size: 20px; transform: translate(-1.55em, 1.5em);"> 03</h2>
 		</span>
 		<h2> Magnetic Stimulation and STEM Cell Technology  </h2>
 	</div>
@@ -210,7 +213,7 @@
 	<h2 style="color: white;"> STEM Cell Science  </h2>
 	<p style="margin-bottom: 0px; margin-top: 12px; color: white;"> Stem cells have the remarkable potential to develop into many different cell types in the body during early life and growth. In many tissues, they also play a role for internal repair, dividing essentially without limit to replenish other cells as long as the person or animal is still alive. Embryotic stem cells were successfully derived from mice in 1981 and human embryos in 1998. Another breakthrough includes the identification of stem cell-like state in adult cells by genetic reprogramming in 2006. </p>
 	
-	<div style="overflow: auto;">
+	<div>
 	<img id="stem_graphic1" src="res/tech_stem1.png">
 	<div>
 	<p style="margin-top: 18px;  margin-bottom: 18px; color: white;"> These findings have triggered great interests in research for treating diseases such as diabetes, heart disease, and spinal and brain injuries. However, much work remains to be done in the laboratory and the clinic to understand how to use these cells for cell-based therapies to treat diseases.
@@ -218,7 +221,7 @@
 	</div>
 	</div>
 	
-	<div style="overflow: auto;">
+	<div>
 	<img id="stem_graphic2" src="res/tech_stem2.png">
 	<div>
 	<p style="margin-top: 18px;  margin-bottom: 18px; color: white;"> These guided stem cells were able to "swim upstream against the fluid flow and natural cues" and head for other locations within the brain that were injured or diseased. These findings clearly open the door for potential applications to many other treatments with stem cells. Thrivikraman et al. (2017) reviewed an important line of work in the stem cell research and concluded that electric field stimulation can be employed to evoke appropriate stem cell responses through signaling pathways and cellular responses, including the participation of reactive oxygen species and heat shock proteins, modulation of intracellular calcium ion concentrations, ATP production and many other events involving the clustering of cell surface receptors, cytoskeletal remodeling and so on. GDC technology of magnetic pulse stimulation is in alliance with the cited works above but has clear advantages in clinical practice with its non-invasive nature. </p>
@@ -226,34 +229,6 @@
 	</div>
   </div>
 </div>
-
-<!--div id="process" class="section" style="overflow: hidden;">
-	<div class="section-graphics left">
-		<canvas id="grid1" width="250" height="375"></canvas>
-		<img src="res/embpProcess.png"></img>
-		<script> drawGrid("grid1", "#C6E4D5", 12); </script>
-	</div>
-	
-	
-	<div class="section-body right">
-	<h2> The EMBP Process </h2>
-	<p style="margin-bottom: 0px; margin-top: 11px;"> First, an electroencephalogram (EEG) is conducted on a 
-	patient experiencing physiological and/or medical conditions in need of treatment. This records the subject’s
-	brain condition and characteristic activity patterns. </p>
-	
-	<p style="margin-top: 9px;"> Next, the raw EEG data is analyzed with a Variable Pulse Intervals (VPI) 
-	transform algorithm resulting in a unique patient EEG Variable Pulse Intervals signal. The pattern of the 
-	EEG signal is used to program the transistor-transitor logic (TTL) pulses, or other triggers to activate a 
-	transcranial magnetic stimulation (TMS) device with the similar variable pulse schedule. </p>
-	
-	<p style="margin-top: 9px;"> The personalized TMS is administered to the patient for a time sufficient to 
-	modulate brain activity, treating the observed anomalies from the EEG to utimately improve the physiological 
-	or clinical condition being treated. </p>
-	
-	<p style="margin-top: 9px;  margin-bottom: 30px"> In contrast to the typical method of focusing on clinical
-	symptoms or behaviors, EMBP focuses on the brain’s physical condition.</p>
-	</div>
-</div-->
 
 
 <footer id="footer">

@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,19 +65,19 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
 		display: block;
 	}
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -140,15 +135,15 @@
 			<li onclick="selectTab('tabBar', 'background');" id="background_tab">Background</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Liu Bowen was born in Taiwan and graduated from the Finance and Taxation Department of Feng Chia University in 1986. His main work experience is accounting and financial management, as well as financial related internal control and risk management and auditing. He has considerable practical experience in dealing with financial institutions, corporate fund management, tax planning, cost control, etc.
-		</p>
+		</div>
 		
-		<p id="background" class="tab-content">
+		<div id="background" class="tab-content">
 			Mr. Liu has more than 8 years of experience in financial accounting and stock work in listing enterprise, Taiwan. He was the chief financial officer of the Construction Group in Beijing and Shanghai, China from 2003 to 2006. He is responsible for the company's financial accounting management and related management.
-			<br/><br/>
+			<p></p>
 			Mr. Liu has been a financial accountant in a subsidiary of the KOOS family business in Taiwan for more than 20 years. He has also served as a director and supervisor, participated in the company's listing and counseling, and has more than 30 years of experience in corporate accounting and financial management. He is also familiar with the accounting and financial systems and leads departmental staff to accomplish the goals set by the company.
-		</p>
+		</div>
 	</div>
 </div>
 

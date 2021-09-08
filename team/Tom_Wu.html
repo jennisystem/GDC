@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,12 +65,12 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
@@ -83,7 +78,7 @@
 	}
 	
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -141,25 +136,25 @@
 			<li onclick="selectTab('tabBar', 'background');" id="background_tab">Background</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Tom Wu has an extensive background in investment and management. Throughout his career, he has opened up new and innovative business opportunities and product development ventures throughout Asia. With over 19 years of experience in the industry, he has developed a number of new products within the broader healthcare market. As of 2010, he is the acting Managing Director for China First Private Equity Management Co. Ltd., an international financial advisory & investment company based in Hong Kong.
-			<br/><br/>
+			<p></p>
 			He has made financial deals with major existing venture capitals, private equities, top investment firms such as Goldman Sachs, KKR, Lehman Brothers, Nomura, Lazard, Merrill Lynch in Technologies, and Financial and Bankers top executive old boys network.He is also actively involved in several pre IPO and post IPO asset enhancement projects as well as in the ASEAN market. His latest ventures include hotels, REITs, commercial properties, healthcare, internet bank, Remittance/FinTech, new energy, electric vehicles funds, as well as acting as a managing partner and advisory board member.
-			<br/><br/>
+			<p></p>
 			In the biotech sector, Tom has embarked on a visionary plan to assist in the development of biotech companies, with a particular focus on identifying the latest medical breakthroughs, innovative ways to deliver medicines, medical equipment, and diagnostic alternatives. While serving as Chief Strategy Officer for Dex Medical Device Co., Ltd for global corporate development, the company went through a technology acquisition via a reversed merger. This led to a Nasdaq Main Board listing as a research based global business developing bio pharmaceuticals companies and resulted in the company being recognized as an emerging global new product development (NPD) firm specializing in Novel Drug Delivery Systems
-			<br/><br/>
+			<p></p>
 			He has also taken on the roles of Co-Founder and Executive Partner as both an advisor and board member for a number of companies including New Drug Development for Microbase Technology Corp. Artificial Intelligence, Big Data, neural and viral treatments in collaboration with the founders of Newport Brain Research Laboratory Inc.(NBRL Global), DanceBiopharm, Conrex Pharma, NAL Pharma, ongoing corporate enhancement works with Excelsius Medical, and Endogene Medical Device Technologies.
-		</p>
+		</div>
 		
-		<p id="background" class="tab-content">
+		<div id="background" class="tab-content">
 			In 1981, Tom started his career as Full Registered Representative, Assistant VP/Financial Consultant for Thomson Mckinnon Financial Group, the precursor companies of Jefferies Group and Wells Fargo. He completed his DBA (ABD) studies, received MABP in International Strategic Management with emphasis on Healthcare Industry and strategic positioning from University of South Australia, International Graduate School of Business.
-			<br/><br/>
+			<p></p>
 			Prior to entering into the healthcare sector from 1991 to 1998, he was a Proprietary Trader cleared through LFG, LLC. From 1989 to 1991 he was the Asia Representative for Balfour MacClaine, and Taiwan Representative for Franklin Fund, a San Mateo based mutual fund management firm.
-			<br/><br/>
+			<p></p>
 			The following involved turnaround roles in NexMed, Inc. (NASDAQ: NEXM), the precursor company of Apricus Biosciences, in 1999:
-			<br/><br/>
+			<p></p>
 			He co-founded NexMed Asia Limited as Chairman and President of the holding company, NexMed Asian Pacific Limited which is an Asia based novel drug development company. During his tenure with NexMed Asia, he spearheaded and licensed out several proprietary DDS drug products to multi-national pharmaceutical companies.
-		</p>
+		</div>
 	</div>
 </div>
 

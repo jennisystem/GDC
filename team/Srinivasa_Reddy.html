@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,12 +65,12 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
@@ -83,7 +78,7 @@
 	}
 	
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -144,11 +139,11 @@
 		
 		<div id="overview" class="tab-content selected">
 			Dr. Srinivasa Reddy received his Bachelor’s degree in Chemistry at Osmania University in Hyderabad, Telangana, India, and his Master’s degree in Biological Sciences at Roorkee University in Roorkee, Uttarakhand, India. He earned his PhD in Comparative Biochemistry at the University of California, Berkeley, and became a postdoctoral scholar at the University of California, Los Angeles for Cell and Molecular Biology. 
-			<br/><br/>
+			<p></p>
 			He is presently a professor of Molecular and Medical Pharmacology for the Interdepartmental program of Molecular Toxicology.
-			<br/><br/>
+			<p></p>
 			Dr. Reddy is primarily interested in understanding the expression, regulation, and mechanism of action of enzymes involved in arachidonic acid metabolism. He researches their role in the development of inflammatory diseases with focus on discovering diagnostic and therapeutic molecules for their treatment. 
-			<br/><br/>
+			<p></p>
 			Currently, his ongoing projects include 
 			<ol>
 				<li>The role of cyclooxygenase 2 (COX2) in the resolution of inflammation in IBD. His laboratory was the first to report that COX2 plays an anti-inflammatory role in the mouse intestine and established a novel mouse model of Crohn’s disease. 

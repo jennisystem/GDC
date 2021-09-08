@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,19 +65,19 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
 		display: block;
 	}
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -139,13 +134,13 @@
 			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Jack Song is a graduate of the National Kaohsiung First University of Science and Technology and Computer and Communication Research Institute and has over 20 years of experience studying and teaching magnetic field application and bioelectrophysiology.
-			<br/><br/>
+			<p></p>
 			From 1999 to 2004, he worked as Service Manager in charge of managing the neuroelectrophsiology equipment at DANTEC in Taiwan. In 2004, he became the Product Manager responsible for Taiwan EMG / EEG / Urinary tract dynamics equipment at Medtronic. In 2010, he took on the role of Product Manager - Sales and Maintenance Management for MagVenture TMS.
-			<br/><br/>
+			<p></p>
 			His current work involves magnetic stimulation therapy for medical application, product promotion, and equipment maintenance.
-		</p>
+		</div>
 	</div>
 </div>
 

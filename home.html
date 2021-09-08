@@ -76,7 +76,8 @@
 	
 	.flip-card {
 		background-color: transparent;
-		width: 10em;
+		width: 15em;
+		max-width: 80%;
 		height: 5em;
 		perspective: 1000px;
 		margin: auto;
@@ -179,7 +180,15 @@
 
 <div id="about-us" class="section" style="padding-top: 90px; padding-bottom: 120px; background: #425EC9;">
 	<div class="header">
-		<h2 style="line-height: 1; margin-top: 2px; text-align: center; color: white;">Who We Are</h2>
+		<div style="display: block; text-align: center;">
+			<div class="sec-header" style="position: relative; display: inline-block; margin-bottom: 20px;">
+				<span>
+					<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-2.3em, -1.4em); border-top: 1px solid #77ABEF; border-left: 1px solid #77ABEF;" ></p>
+					<h2 style="color: #77ABEF; position: absolute; font-size: 20px; transform: translate(-2.1em, -0.4em);"> 01</h2>
+				</span>
+				<h2 style="line-height: 1; margin-top: 2px; text-align: center; color: white;">Who We Are</h2>
+			</div>
+		</div>
 		<div style="display: flex; justify-content: center;">
 			<a class="button"  href="innovators.html"> LEARN MORE </a>
 		</div>
@@ -208,19 +217,19 @@
 	<p style="margin-bottom: 6px; margin-top: 11px;"> EMBP is a personalized, non-pharmaceutical, and non-invasive neuromodulation treatment that alters nerve activity through the targeted delivery of stimulus to specific neurological sites in the body in order to help restore and optimize brain functionality. </p>
 	<a class="link-simple" href="our_technology.html#embp"> LEARN MORE</a> <!--TODO: INSERT LINK-->
 	
-	<hr style="border-top: 1px solid #90E0E0"/>
+	<hr />
 	<h3> Magnetic Stimulation for Viral Infection </h3>
 	<p style="margin-top: 9px;  margin-bottom: 6px"> Our technology for treating viral infections involves administering magnetic pulses cutaneously through a specially designed ergonomic coil to targeted nerve ganglia in order to deactivate the viral growth and proliferation. </p>
 	<a class="link-simple" href="our_technology.html#viral"> LEARN MORE</a> <!--TODO: INSERT LINK-->
 		
-	<hr style="border-top: 1px solid #90E0E0"/>
+	<hr />
 	<h3> Magnetic Stimulation and STEM Cells </h3>
 	<p style="margin-top: 9px;  margin-bottom: 6px"> Our stem cell technology involves repetitive electromagnetic stimulation where a patient received stem cell transplantation for organ or tissue injury.  </p>
 	<a class="link-simple" href="our_technology.html#stem1"> LEARN MORE</a> <!--TODO: INSERT LINK-->
 	</div>
 </div>
 
-<div id="divisions" class="section" style="background-image: url('res/home_divpng.png');">
+<div id="divisions" class="section" style="background-image: url('res/home_divpng.png'); background-position: center;">
 	<div class="sec-header" style="position: relative; display: inline-block; left: 50%; transform: translate(-50%, 0);">
 		<span>
 			<p style="position: absolute; width: 7em; height: 0.5em; transform: translate(-2.3em, -1.4em); border-top: 1px solid white; border-left: 1px solid white;" ></p>
@@ -236,10 +245,9 @@
 		</div>
 		<div class="flip-card-back">
 		  <div style="display: flex;">
-			<img src="res/NT_Logo.png" alt="NoetherTech" style="width: 117px; height: 88px;">
 			<div style="margin-top: 0;">
-			  <p style="margin-top: 0;">NoetherTech is a neuro-optimization company that researches, diagnoses, and treats neurological and psychiatric disorders.</p>
-			  <a class="link-simple"> Learn More </a>
+			  <p style="margin: 1em; font-size: 22px;">NoetherTech is a neuro-optimization company that researches, diagnoses, and treats neurological and psychiatric disorders.</p>
+			  <a class="link-simple" style="font-size: 20px;"> Learn More </a>
 			</div>
 		  </div>
 		</div>

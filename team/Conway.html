@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -69,6 +64,13 @@
 		overflow-y: auto;
 		padding: 0.75em;
 		display: none;
+		font-family: "Noto Sans", sans;
+		font-size: 18px;
+	}
+	.tab-content ul{margin: 0 0 0 0;}
+	.tab-content li{
+		font-family: "Noto Sans", sans;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
@@ -76,7 +78,7 @@
 	}
 	
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -133,13 +135,13 @@
 			<li onclick="selectTab('tabBar', 'overview');" class="selected" id="overview_tab">Overview</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Conway Ho is a successful businessman and entrepreneur. He founded his own video game, entertainment, and software development business early in college. He is the co-founder of HanaHo Games, which has contracted with Microsoft, Capcom, Electronic Arts, Sega, Konami, and Namco, to name a few. 
-			<br/><br/>
+			<p></p>
 			He also co-founded Newport Brain Research Laboratory (NBRL), Brain Treatment Center (BTC), and was instrumental to the creations of MRT and MeRT technologies currently used by WaveNeuroscience, Inc. 
-			<br/><br/>
+			<p></p>
 			Mr. Ho now brings his entrepreneurial leadership and experience to Nerve Principles, GDC’s Neuro-Optimization division. Here, he focuses on research and treatment of neurological and psychiatric disorders. 
-		</p>
+		</div>
 	</div>
 </div>
 

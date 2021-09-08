@@ -34,17 +34,12 @@
 		font-family: Abel;
 		font-size: 28px;
 		line-height: 1em;
-		margin: 0.5em 0 0 0;
+		margin: 0.5em 0 0.5em 0;
 		letter-spacing: -0.02em;
 		color: #4DAAD2;
 	}
 	
-	.tab{
-		padding: 6px 0 0 0; margin: 0;
-		border: 2px solid #90E0E0;
-		display: flex;
-		flex-flow: row wrap;
-	}
+	.tab{ padding: 6px 0 0 0; margin: 0; border: 2px solid #90E0E0; border-bottom: 0px; display: flex; flex-flow: row wrap; }
 	.tab li{
 		line-height: 1em;
 		margin: 0 0 -2px 0;
@@ -70,12 +65,12 @@
 		padding: 0.75em;
 		display: none;
 		font-family: "Noto Sans", sans;
-		font-size: 22px;
+		font-size: 18px;
 	}
-	.tab-content ul, .tab-content ol{margin: 0.5em 0 0 0;}
+	.tab-content ul{margin: 0 0 0 0;}
 	.tab-content li{
 		font-family: "Noto Sans", sans;
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	.tab-content.selected{
@@ -83,7 +78,7 @@
 	}
 	
 	
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) { .tab-content {overflow-y: scroll; height: 20em;}
 	
 	}
 	@media only screen and (orientation: portrait) {
@@ -142,11 +137,11 @@
 			<li onclick="selectTab('tabBar', 'awards');" id="awards_tab">Awards</li>
 		</ul>
 		
-		<p id="overview" class="tab-content selected">
+		<div id="overview" class="tab-content selected">
 			Dr. Fabio Macciardi is presently a Research Professor of Psychiatry at USC’s Keck School of Medicine, and Professor of Molecular Psychiatry at the University of California, Irvine.
-			<br/><br/>
+			<p></p>
 			Dr. Macciardi is both a certified (EU) clinical psychiatrist and epidemiologist and a well-established psychiatric geneticist with years of experience in large-scale and international collaborations. He has identified PS1 the first gene for early onset Alzheimer's disease (Hyslop et al, 1992) and several genes (DAOA, DAAO, AHI1) for schizophrenia, now definitively confirmed. Most of his work has been on the genetics of complex disorders (other than AD and schizophrenia, He worked on bipolar disorders, autism, depression, autoimmune disorders and ALS) and pharmacogenomics. At present, his lab activities are mostly related to study the function and evolution of genes in complex traits and to next-generation sequencing (NGS) of complex traits. In 2010, his team published the first paper that shows the identification of a gene and its molecular defect in a rare Mendelian disorder using NGS and they are now extending this approach to find the molecular bases of genes involved in schizophrenia, autism and AD. His current major research interests are related to studying the fine mechanisms of gene regulation exerted by the non-coding DNA. All across his research, development of genetic epidemiology methods and algorithms remains a major focus of activity.
-		</p>
+		</div>
 		
 		<div id="background" class="tab-content">
 			Education
